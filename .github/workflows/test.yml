@@ -1,0 +1,13 @@
+name: Test Workflow
+
+on:
+  push:
+    branches: 
+      -main
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Run echo job
+       run: echo "This job is being run by ${{github.actor }} on the ${{github.ref }} branch in the ${{ github.repository }} repo "
+  
