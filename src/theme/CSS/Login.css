@@ -49,78 +49,8 @@
 .input-container {
   width: 100% !important;
 }
-.input-group {
-  position: relative;
-  width: 100% !important;
-  margin: 0 0 20px 0;
-  label {
-    color: #387919;
-    font-weight: 500;
-    font-size: clamp(0.8rem, 0.8rem + 1vw, 1.1rem);
-  }
-}
-.input-group .input {
-  width: 100%;
-  padding: 18px 12px 8px;
-  border: 1px solid #ffffff;
-  border-radius: 10px;
-  font-size: 1rem;
-  background-color: #f5ebdf75;
-  box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease;
-}
-.input {
-  overflow: hidden;
-}
-.input-group .input:focus {
-  outline: none;
-  border-color: #387919;
-  box-shadow: 0 0 5px rgba(56, 121, 25, 0.5);
-}
 
-.input-group .label {
-  position: absolute;
-  left: 12px;
-  top: 16px;
-  color: var(--primary);
-  transition: all 0.2s ease;
-  padding: 0 6px;
-  pointer-events: none;
-}
-.input-group .input:focus + .label,
-.input-group .input:not(:placeholder-shown) + .label {
-  top: -8px;
-  font-size: 0.8rem;
-  color: #387919;
-  background-color: beige;
-}
-.input-group .input:focus {
-  background-color: #f5ebdf75;
-  border: 1px solid #387919;
-}
-.input:invalid {
-  border: 1px solid rgb(247, 79, 28);
-  box-shadow: 0 0 5px rgba(121, 44, 25, 0.5);
-}
-.login-button {
-  border-radius: 100px;
-  height: 40px;
-  width: 100%;
-  cursor: pointer;
-  background-color: #d67b03;
-  border: 1px solid #d67b03;
-  font-size: 1.3rem;
-  color: #ffffff;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  margin: 20px 0 0 0;
-}
-.login-button:hover {
-  background-color: #f5ebdf75;
-  border: 1px solid #d67b03;
-  box-shadow: 0 0 10px rgba(214, 123, 3, 0.5);
-  color: #d67b03;
-}
+
 
 .google {
   padding: 10px;
@@ -129,12 +59,12 @@
   justify-content: center;
   gap: 10px;
   width: 100%;
-  background-color: #f5ebdf75;
+  background-color: #f5ebdf75 !important;
   border: 1px solid white;
   border-radius: 10px;
   font-size: 1.1rem;
   height: 40px;
-  color: #387919;
+  color: #387919 !important;
   font-weight: 500;
   transition: all 0.2s ease;
   margin: 20px 0;
@@ -146,8 +76,8 @@
   }
 }
 .google:hover {
-  background-color: #ecd9c2d7;
-  box-shadow: 0 0 10px rgba(56, 121, 25, 0.5);
+  background-color: #f1eeebd7 !important;
+  box-shadow: 0 0 10px rgba(56, 121, 25, 0.5) !important;
 }
 .actions {
   width: 100% !important;

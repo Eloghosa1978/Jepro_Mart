@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import "../CSS/LoginLayout.css";
+import "../theme/CSS/LoginLayout.css";
 
 const LoginLayout = ({ welcomeNote, image, form, brandNote }) => {
   const navigate = useNavigate();
@@ -9,9 +9,9 @@ const LoginLayout = ({ welcomeNote, image, form, brandNote }) => {
       <div className="sign-container">
         <div className="content-container">
           <header className="sign-header">
-            <h2 className="logo">
+            <h3 className="logo">
               ReeDin <span>Fashion</span>
-            </h2>
+            </h3>
             <button onClick={() => navigate("/")}>Back to website</button>
           </header>
           <div className="content">

@@ -1,7 +1,8 @@
 import React, { useState, useMemo } from "react";
-import "../../CSS/Input.css";
+import "../theme/CSS/Input.css";
 
 const Input = ({ name, type, placeholder, className, value, onChange }) => {
+  // eslint-disable-next-line no-unused-vars
   const [isFilled, setIsFilled] = useState(!!value);
   const handleInputChange = (e) => {
     onChange(e);
@@ -22,7 +23,7 @@ const Input = ({ name, type, placeholder, className, value, onChange }) => {
         name={name}
         placeholder=" "
         required
-        
+
       />
       <label className="label" htmlFor={placeholder} id={placeholder}>
         {placeholder}

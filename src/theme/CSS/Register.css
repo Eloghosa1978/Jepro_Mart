@@ -1,0 +1,55 @@
+.flex-inputs{
+  width: 100% !important;
+  display: flex;
+  gap: 20px;
+}
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #387919;
+  a{
+    color: #d67b03;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+#terms{
+  width: 16px;
+  height: 16px;
+  accent-color: #387919;
+}
+
+.register-button {
+  margin: 20px 0 ;
+}
+
+.login {
+  text-align: center;
+  margin-top: 20px;
+  p {
+    color: #387919;
+    font-size: 0.9rem;
+    a {
+      color: #d67b03;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+small{
+  font-size: 0.8rem;
+  color: #ff4d4d;
+  margin-top: -10px;
+  line-height: 0;
+}
