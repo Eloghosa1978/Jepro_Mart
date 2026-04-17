@@ -13,6 +13,9 @@
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+
   scrollbar-width: none;
   width: min(80%, 1000px);
 }
@@ -41,20 +44,26 @@
   }
   button:hover {
     background-color: var(--primary-hover);
-
   }
 }
 .content {
   background-color: #ecebea60;
   padding: 10px;
-  margin: 20px;
   border-radius: 20px;
   height: min(500px, auto);
   justify-items: center;
+  justify-self: center;
+  align-self: center;
 
   div {
-    width: max(70%, 400px);
+    width: max(70%, 350px);
     overflow: hidden;
+  }
+}
+@media screen and (min-height: 724px) {
+  .content {
+    height: 724px;
+    margin: 50% 0;
   }
 }
 .input {
@@ -97,9 +106,12 @@
   background: linear-gradient(to top, black 10%, transparent 80%);
   .bottom {
     padding: 10px;
-    background: radial-gradient(rgba(43, 29, 16, 0.692), rgba(240, 196, 168, 0.438));
+    background: radial-gradient(
+      rgba(43, 29, 16, 0.692),
+      rgba(240, 196, 168, 0.438)
+    );
     width: 80%;
-    height: 30%;
+    height: min(30%, auto);
     align-content: center;
     border-radius: 10px;
     position: absolute;
@@ -113,7 +125,6 @@
       strong {
         color: #387919;
       }
-
     }
     p {
       font-size: clamp(0.8rem, 0.8rem + 1vw, 1.1rem);
@@ -132,20 +143,20 @@
     border-radius: unset;
     img {
       object-fit: cover;
-      filter:  brightness(0.5);
+      filter: brightness(0.5);
     }
-    .overlay{
+    .overlay {
       background: unset;
-      .bottom{
+      .bottom {
         background: unset;
         padding: 0;
-        h2{
+        h2 {
           color: #f8f8f8;
-          strong{
+          strong {
             color: #387919;
           }
         }
-        p{
+        p {
           color: #f8f8f8;
         }
       }
@@ -155,9 +166,11 @@
     background-color: #f8f6f470;
     margin: 20px;
     backdrop-filter: blur(20px);
-    div{
-    width: 100%;
-  }}
+    align-self: center;
+    div {
+      width: 100%;
+    }
+  }
 
   .welcome-note {
     padding: 10px;
@@ -176,7 +189,7 @@
       word-wrap: break-word;
     }
   }
-  .content-container{
+  .content-container {
     width: 100%;
   }
 }

@@ -1,0 +1,79 @@
+/* Handle autofill for webkit browsers (Chrome, Safari, Edge) */
+.input-group .input:-webkit-autofill,
+.input-group .input:-webkit-autofill:hover,
+.input-group .input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #f5ebdf75 inset !important;
+  -webkit-text-fill-color: inherit;
+}
+
+.input-group .input:-webkit-autofill + .label {
+  top: -8px;
+  font-size: 0.8rem;
+  color: #387919;
+  background-color: beige;
+}
+
+/* Handle filled state via React state */
+.input-group.filled .label {
+  top: -8px;
+  font-size: 0.8rem;
+  color: #387919;
+  background-color: beige;
+}
+
+.input-group {
+  position: relative;
+  width: 100% !important;
+  height: auto;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  label {
+    color: #387919;
+    font-weight: 500;
+    font-size: clamp(0.8rem, 0.8rem + 1vw, 1.1rem);
+  }
+}
+.input-group .input {
+  width: 100%;
+
+  padding: 18px 12px 8px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f5ebdf75;
+  box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+.input {
+  overflow: hidden;
+}
+.input-group .input:focus {
+  outline: none;
+  border-color: #387919;
+  box-shadow: 0 0 5px rgba(56, 121, 25, 0.5);
+}
+
+.input-group .label {
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  color: var(--primary);
+  transition: all 0.2s ease;
+  padding: 0 6px;
+  pointer-events: none;
+}
+.input-group .input:focus + .label,
+.input-group .input:not(:placeholder-shown) + .label {
+  top: -8px;
+  font-size: 0.8rem;
+  color: #387919;
+  background-color: beige;
+}
+.input-group .input:focus {
+  background-color: #f5ebdf75;
+  border: 1px solid #387919;
+}
+.input:invalid {
+  border: 1px solid rgb(247, 79, 28);
+  box-shadow: 0 0 5px rgba(121, 44, 25, 0.5);
+}

@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { Link } from "react-router";
-import "../CSS/Navbar.css";
+import "../theme/CSS/Navbar.css";
 import Search from "./Search";
 
 const Navbar = () => {
